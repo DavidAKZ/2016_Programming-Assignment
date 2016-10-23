@@ -8,7 +8,6 @@ directory to store the following:
 
 The zip file is downloaded and txt files extracted to be operated on as follows:
 
-Data 			Description 								Dimensions
 		
 SubjectTrainData 	These are the people in the TrainData set. 				1 row x 7352 measurements
 
