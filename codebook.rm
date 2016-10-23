@@ -1,13 +1,14 @@
-#Variable 			#Description										#Dimensions
-thisFile 			Used to pass the https string to the download.file command 					na
-ProgrammingAssignment 		A subdirectory created below the users working directory to store input and output files 	na
-UCI_HAR_Dataset.zip 		The file name to store the zip file in the above sub-directory 					na
+#Variable 			#Description								#Dimensions
+thisFile 			Used to pass the https string to the download.file command 		na
+ProgrammingAssignment 		A subdirectory created below the users working directory to store 
+				input and output files 							na
+UCI_HAR_Dataset.zip 		The file name to store the zip file in the above sub-directory 		na
 		
-unzipFeaturesData 		The measured variable names to txt file format 						561 variables x 1 heading
-unzipTestData 			A test set for the measured variable names to txt file format 				561 variables x 2947 measurements
-unzipTrainData 			A train set as above to txt file format 						561 variables x 7352 measurements
-unzipSubjectTrainData 		These are the people in the TrainData set above to txt file format 			1 variable x 7352 measurements
-unzipSubjectTestData 		These are the people in the TestData set above to txt file format 			1 variable x 2947 measurements
+unzipFeaturesData 		The measured variable names to txt file format 				561 variables x 1 heading
+unzipTestData 			A test set for the measured variable names to txt file format 		561 variables x 2947 measurements
+unzipTrainData 			A train set as above to txt file format 				561 variables x 7352 measurements
+unzipSubjectTrainData 		These are the people in the TrainData set above to txt file format 	1 variable x 7352 measurements
+unzipSubjectTestData 		These are the people in the TestData set above to txt file format 	1 variable x 2947 measurements
 		
 featuresData 			See above 	
 testData 			See above 	
@@ -15,20 +16,21 @@ trainData 			See above
 subjectTrainData 		See above 	
 subjectTestData 		See above 	
 		
-completeSubjectData 		Combine subjectTrainData and subjectTestData 						1 variable x 10299 measurements
-truncateCompleteSubjectData 	Delete the last three rows of the dataframe 						1 variable x 10296 measurements
+completeSubjectData 		Combine subjectTrainData and subjectTestData 				1 variable x 10299 measurements
+truncateCompleteSubjectData 	Delete the last three rows of the dataframe 				1 variable x 10296 measurements
 		
-completeTrainData 		Combine testData and trainData 								561 variables x 10299 measurements
-truncateCompleteTrainData 	Delete the last three rows of the dataframe 						561 variables x 10296 measurements
+completeTrainData 		Combine testData and trainData 						561 variables x 10299 measurements
+truncateCompleteTrainData 	Delete the last three rows of the dataframe 				561 variables x 10296 measurements
 		
-featureFactor 			Extract variable names from featuresData 						561 variables x 1 heading
-namesCompleteData 		Add human readable column names 							561 variables x 1 heading
-dataSubset 			Subset truncateCompleteTrainData to only those columns that involve 'mean' and 'std' 	62 variables x 10296 measurements
+featureFactor 			Extract variable names from featuresData 				561 variables x 1 heading
+namesCompleteData 		Add human readable column names 					561 variables x 1 heading
+dataSubset 			Subset truncateCompleteTrainData to only those columns that
+				involve 'mean' and 'std' 	62 variables x 10296 measurements
 		
-finalDataSubset 		Combine dataSubset and truncateCompleteSubjectData 					63 variables x 10296 measurements
-Subject 			Column heading for subject(person) 							1 variable x 10296 measurements
-activity 			Column heading for subject activity (repeats every 6 rows) 				1 variable x 10296 measurements
-repeatActivity 			Fill activity column as above 								1 variable x 10296 measurements
-FeatureAverage 			Averages the 62 columns involving 'mean' and 'std' measurements 			1 variable x 10296 measurements
+finalDataSubset 		Combine dataSubset and truncateCompleteSubjectData 			63 variables x 10296 measurements
+Subject 			Column heading for subject(person) 					1 variable x 10296 measurements
+activity 			Column heading for subject activity (repeats every 6 rows) 		1 variable x 10296 measurements
+repeatActivity 			Fill activity column as above 						1 variable x 10296 measurements
+FeatureAverage 			Averages the 62 columns involving 'mean' and 'std' measurements 	1 variable x 10296 measurements
 		
-tidyDataSet 			Subset the finalDataSubset to produce the tidy data 					3 variables x 10296 measurements
+tidyDataSet 			Subset the finalDataSubset to produce the tidy data 			3 variables x 10296 measurements
