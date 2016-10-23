@@ -1,6 +1,6 @@
 # 2016_Programming-Assignment
-Refer also to the code book in this repo. The script starts by creating a subfolder to the users working d
-irectory to store the following:
+Refer also to the code book in this repo. The script starts by creating a subfolder to the users working
+directory to store the following:
 
 -The zip file of the required data
 
