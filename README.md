@@ -10,11 +10,16 @@ The zip file is downloaded and txt files extracted to be operated on as follows:
 
 Data 			Description 								Dimensions
 		
-SubjectTrainData 	These are the people in the TrainData set . 				1 row x 7352 measurements
-SubjectTestData 	These are the people in the TestData set . 				1 row x 2947 measurements
+SubjectTrainData 	These are the people in the TrainData set. 				1 row x 7352 measurements
+
+SubjectTestData 	These are the people in the TestData set. 				1 row x 2947 measurements
+
 TestData 		These are the results for the variable names for a test set. 		561 rows x 2947 measurements
+
 TrainData 		These are the results for the variable names for a training set.  	561 rows x 7352 measurements
+
 Features data 		These are the variable names. 						1 row x 561 variables
+
 
 Both the subject test and subject train data are read into separate dataframes (df) and combined using 'rbind' giving a total number of 10299 rows by 1 column. The df is called completeSubjectData. Unfortunately, 10299 records are not divisible by 6 (activities), where the activities are walking, walkingDownstairs, sitting, standing and laying.
 
